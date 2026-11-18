@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #0b0714;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(11, 7, 20, 0.9);
+  border-bottom: 1px solid rgba(255, 42, 133, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #ff2a85;
+  text-shadow: 0 0 12px #ff2a85;
+}
+
+.navbar nav a {
+  color: #d1c4e9;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #00f0ff;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+/* Hero Banner */
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #1a0b2e 0%, #3b0d54 50%, #ff2a85 100%);
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(0, 240, 255, 0.2), rgba(11, 7, 20, 0.85));
+}
+
+.hero-content {
+  position: relative;
+  max-width: 720px;
+  z-index: 2;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(0, 240, 255, 0.15);
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  line-height: 1.1;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, #ff2a85, #ff9e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slogan {
+  font-size: 1.25rem;
+  color: #e0d7f5;
+  margin-bottom: 30px;
+}
+
+/* Caixa da Oferta "Compre Agora e Pague Depois" */
+.promo-box {
+  background: rgba(15, 10, 30, 0.85);
+  border-left: 5px solid #ff2a85;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 25px;
+  border-radius: 8px;
+  margin-bottom: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.promo-box h2 {
+  color: #ff9e00;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.promo-box p {
+  color: #f3e5f5;
+  font-size: 1.05rem;
+}
+
+/* Botões */
+.cta-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #ff2a85, #ff5e00);
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 6px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px rgba(255, 42, 133, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(255, 42, 133, 0.8);
+}
+
+.btn-secondary {
+  border: 2px solid #00f0ff;
+  color: #00f0ff;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 240, 255, 0.15);
+}
+
+/* Benefícios */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 60px 8%;
+  background: #0f0a1d;
+}
+
+.benefit-card {
+  background: #17102b;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 42, 133, 0.2);
+}
+
+.benefit-card h3 {
+  color: #00f0ff;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #8e7cc3;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
